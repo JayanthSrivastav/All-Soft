@@ -7,6 +7,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Grid, CardMedia, CardActionArea } from '@mui/material';
 // import { useState } from 'react';
+// import {Routes, Route} from 'react-router-dom';
 
 // const bull = (
 //   <Box
@@ -21,9 +22,9 @@ import { Grid, CardMedia, CardActionArea } from '@mui/material';
 export default function BasicCard() {
   return (
     <Grid container spacing={4} className="gridContainer">
-      {/* <Grid item xs={6} sm={6} md={4}>
+      {/* <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 275 }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='https://www.google.com'>
             <CardContent>
               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                 Word of the Day
@@ -46,9 +47,9 @@ export default function BasicCard() {
           </CardActions>
         </Card>
       </Grid> */}
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/ngrok'>
             <CardMedia
               sx={{ height: 180 }}
               image="http://www.endtoend.ai/assets/blog/tutorial/ngrok-ssh-forwarding/ssh_ngrok.jpg"
@@ -66,9 +67,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/java'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://venturebeat.com/wp-content/uploads/2015/12/oracle-java-e1450723340931.jpg?w=1200&strip=all"
@@ -86,9 +87,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/maven'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://user-images.githubusercontent.com/88981/188587693-5710e58b-c1ad-442c-ac06-e1aeab30a905.png"
@@ -102,9 +103,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/tomcat'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://nsfocusglobal.com/wp-content/uploads/2019/04/apachetomcat.jpg"
@@ -118,9 +119,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/spring-boot'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://azpanel.azilen.com/uploads/everything_must_know_spring_boot_application_scratch_12_8c4e62d4fe.jpg"
@@ -134,9 +135,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/mongoDB'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png"
@@ -150,9 +151,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/postman'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://miro.medium.com/max/894/1*0jyROv8ksMb6tZtlf2ewVQ.png"
@@ -166,9 +167,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/nodejs'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://www.devteam.space/wp-content/uploads/2022/05/nodejs.jpg"
@@ -182,9 +183,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/vsc'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://code.visualstudio.com/opengraphimg/opengraph-blog.png"
@@ -198,9 +199,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/github'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://miro.medium.com/max/1400/1*SSRjtoQ0H2X3SBPOiJ5rZw.jpeg"
@@ -214,9 +215,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/react'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://repository-images.githubusercontent.com/37153337/9d0a6780-394a-11eb-9fd1-6296a684b124"
@@ -230,9 +231,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/bootstrap'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://getbootstrap.com/docs/5.2/assets/img/bootstrap-icons.png"
@@ -246,9 +247,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/mui'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://cdn-media-1.freecodecamp.org/images/1*FDNeKIUeUnf0XdqHmi7nsw.png"
@@ -262,9 +263,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/axios'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://linuxhint.com/wp-content/uploads/2022/01/word-image-1086.png"
@@ -278,9 +279,9 @@ export default function BasicCard() {
           </CardActionArea>
         </Card>
       </Grid>
-      <Grid item xs={6} sm={6} md={4}>
+      <Grid item xs={12} sm={6} md={4}>
         <Card sx={{ minWidth: 250 }} style={{ backgroundColor: "#171f24", color: "#03dac5" }}>
-          <CardActionArea href='https://www.google.com' target="_blank">
+          <CardActionArea href='/npm'>
             <CardMedia
               sx={{ height: 180 }}
               image="https://miro.medium.com/max/1400/1*sO5oyZhvbI0cW3SrZ9ZwCA.png"
