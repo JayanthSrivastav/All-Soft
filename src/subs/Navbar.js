@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <AppBar position='static' sx={{ backgroundColor: "#000000", color:"#bb86fc" }}>
         <Toolbar>
-            <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{flexGrow: 1}}>
+            <IconButton size='large' edge='start' color='inherit' aria-label='logo' sx={{flexGrow: 1}} href='/'>
                 <CatchingPokemon />
             </IconButton>
             {/* <Typography variant='h6' component='div'>

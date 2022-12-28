@@ -46,3 +46,8 @@
 .nav {
   color: #bb86fc;
 }
+
+.Stepbu {
+  color: #61dafb;
+  @apply relative flex flex-col justify-center items-center w-36
+}
