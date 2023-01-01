@@ -1,52 +1,87 @@
-import { Button, Typography, Box, Stepper, Step, StepButton } from '@mui/material'
+import { Typography, Box } from '@mui/material'
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import '../App.css'
-import { AppBar, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Toolbar } from '@mui/material';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import MenuIcon from '@mui/icons-material/Menu';
 
 
-const steps = ['Download', 'Start using'];
+// const steps = ['Download', 'Start using'];
 
-const drawerWidth = 240;
-
-// interface Props {
-//   /**
-//    * Injected by the documentation to work in an iframe.
-//    * You won't need it on your project.
-//    */
-//   window?: () => Window;
-// }
+// const drawerWidth = 240;
 
 const Ngrok = () => {
   
-
-  // function switchCase(key) {
-
-  //   switch (key) {
-  //     case 0:
-  //       return "Download";
-  //       break;
-  //     case 1:
-  //       return "Start using.";
-  //       break;
-  //     default:
-  //       return 0;
-  //   }
-  // }
-
   return (
     <div className='BGCanvas'>
-      <Box sx={{ width: '100vh', height: '100vh', marginTop: '5vh' }}>
+      <Box sx={{ width: '70%', height: '800vh', marginTop: '2vh', boxShadow: 3 }}>
         
-        <div>
-          
+        <div className='box-div'>
+          <div className='Tool'>
+            <a href='https://ngrok.com/' target='_blank'>
+              <img src='http://www.endtoend.ai/assets/blog/tutorial/ngrok-ssh-forwarding/ssh_ngrok.jpg' alt='ngrok' width='40%' ></img>
+            </a>
+            <Typography variant='body'>
+
+            </Typography>
+          </div>
+          <div className='Download'>
+            {/* <p className='box-heading'>Download</p> */}
+            <Typography variant='h3'component='h3' className='box-heading'>
+              Download.
+            </Typography>
+
+            <Typography variant='h4'component='h4' className='box-s-heading'>
+              Step 1
+            </Typography>
+            <p className='box-text'>Go to ngrok's <a href='https://ngrok.com/' target='_blank'>official website</a>.</p>
+            <img src={require('../assets/ngrok/download-step1.png')} alt='step-1' className='screenshots'/>
+
+            <Typography variant='h4'component='h4' className='box-s-heading'>
+              Step 2
+            </Typography>
+            <p className='box-text'>Login if you already have an account or else, Sign up.</p>
+            <img src={require('../assets/ngrok/download-step2.png')} alt='step-2' className='screenshot' />
+
+            <Typography variant='h4'component='h4' className='box-s-heading'>
+              Step 3
+            </Typography>
+            <p className='box-text'>After login, you'll be led into the download page. Now, download accordingly to your Operating System. For this, we are going to download for windows so, click on the  'Download for Windows' button and wait until the zip file gets downloaded.</p>
+            <img src={require('../assets/ngrok/download-step3.png')} alt='step-3' className='screenshots'/>
+
+            <Typography variant='h3'component='h3' className='box-heading'>
+              Setting up
+            </Typography>
+
+            <Typography variant='h4'component='h4' className='box-s-heading'>
+              Step 4
+            </Typography>
+            <p className='box-text'>Extract the downloaded zip file.</p>
+            <img src={require('../assets/ngrok/setup-step4.gif')} alt='step-4' className='screenshots'/>
+
+            <Typography variant='h4'component='h4' className='box-s-heading'>
+              Step 5
+            </Typography>
+            <p className='box-text'>Open the extracted folder and you'll find the <i>ngrok</i> application.</p>
+            <img src={require('../assets/ngrok/setup-step5.png')} alt='step-5' className='screenshots'/>
+            <p className='box-text'>Open the <i>ngrok</i> application.</p>
+            <img src={require('../assets/ngrok/setup-step5-2.png')} alt='step-5' className='screenshots'/>
+            <p className='box-text'>The <i>ngrok</i> application is a Terminal.</p>
+
+            <Typography variant='h4'component='h4' className='box-s-heading'>
+              Step 6
+            </Typography>
+            <p className='box-text'>Now, go back to the <i>ngrok</i> website and copy the command with your unique authtoken from 'Connect your account'</p>
+            <img src={require('../assets/ngrok/setup-step6-1.gif')} alt='step-6' className='screenshots'/>
+            <p className='box-text'>and paste it in the <i>ngrok</i> Terminal to store your authtoken to the default <i>ngrok.yml</i> configuration file.</p>
+            <img src={require('../assets/ngrok/setup-step6-2.gif')} alt='step-6' className='screenshots' />
+            <img src={require('../assets/ngrok/setup-step62.png')} alt='step-6' className='screenshots' />
+            <p className='box-text'><i>Authtoken is saved to configuration file: ../ngrok.yml</i>, meaning the authtoken is successfully stored.</p>
+
+          </div>
         </div>
       </Box>
     </div>
   )
+  
 }
 
 export default Ngrok
