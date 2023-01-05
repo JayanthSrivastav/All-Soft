@@ -6,12 +6,15 @@ import '../App.css'
 const Java = () => {
   return (
     <div className='BGCanvas'>
-      <Box sx={{ width: '70%', height: '800vh', marginTop: '2vh', boxShadow: 3 }}>
+      <Box sx={{ width: '80%', marginTop: '2vh', boxShadow: 3 }}>
         
         <div className='box-div'>
-          <div className='Program'>
-            <a href='https://ngrok.com/' target='_blank'>
-              <img src='https://venturebeat.com/wp-content/uploads/2015/12/oracle-java-e1450723340931.jpg?w=1200&strip=all' alt='ngrok' width='40%' ></img>
+          <div className='Tool' >
+            <a href='https://ngrok.com/' target='_blank' rel="noreferrer">
+              <img src='https://venturebeat.com/wp-content/uploads/2015/12/oracle-java-e1450723340931.jpg?w=1200&strip=all' alt='ngrok' width='40%' className='IMU' ></img>
+              {/* <Typography variant='h1' className='im-head'>
+                java
+              </Typography> */}
             </a>
             <Typography variant='body'>
 
@@ -26,14 +29,14 @@ const Java = () => {
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 1
             </Typography>
-            <p className='box-text'>Go to ngrok's <a href='https://ngrok.com/' target='_blank'>official website</a>.</p>
+            <p className='box-text'>Go to ngrok's <a href='https://ngrok.com/' target='_blank' rel="noreferrer">official website</a>.</p>
             <img src={require('../assets/ngrok/download-step1.png')} alt='step-1' className='screenshots'/>
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 2
             </Typography>
             <p className='box-text'>Login if you already have an account or else, Sign up.</p>
-            <img src={require('../assets/ngrok/download-step2.png')} alt='step-2' className='screenshot' />
+            <img src={require('../assets/ngrok/download-step2.png')} alt='step-2' className='screenshots' />
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 3

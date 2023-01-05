@@ -12,11 +12,11 @@ const Ngrok = () => {
   
   return (
     <div className='BGCanvas'>
-      <Box sx={{ width: '70%', height: '800vh', marginTop: '2vh', boxShadow: 3 }}>
+      <Box sx={{ width: '80%', marginTop: '2vh', boxShadow: 3 }}>
         
         <div className='box-div'>
           <div className='Tool'>
-            <a href='https://ngrok.com/' target='_blank'>
+            <a href='https://ngrok.com/' target='_blank' rel="noreferrer">
               <img src='http://www.endtoend.ai/assets/blog/tutorial/ngrok-ssh-forwarding/ssh_ngrok.jpg' alt='ngrok' width='40%' ></img>
             </a>
             <Typography variant='body'>
@@ -32,14 +32,14 @@ const Ngrok = () => {
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 1
             </Typography>
-            <p className='box-text'>Go to ngrok's <a href='https://ngrok.com/' target='_blank'>official website</a>.</p>
+            <p className='box-text'>Go to <i>ngrok</i>'s <a href='https://ngrok.com/' target='_blank' rel="noreferrer">official website</a>.</p>
             <img src={require('../assets/ngrok/download-step1.png')} alt='step-1' className='screenshots'/>
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 2
             </Typography>
             <p className='box-text'>Login if you already have an account or else, Sign up.</p>
-            <img src={require('../assets/ngrok/download-step2.png')} alt='step-2' className='screenshot' />
+            <img src={require('../assets/ngrok/download-step2.png')} alt='step-2' className='screenshots'/>
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 3
