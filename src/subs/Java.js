@@ -10,7 +10,7 @@ const Java = () => {
         
         <div className='box-div'>
           <div className='Tool' >
-            <a href='' target='_blank' rel="noreferrer">
+            <a href='https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html' target='_blank' rel="noreferrer">
               <img src='https://venturebeat.com/wp-content/uploads/2015/12/oracle-java-e1450723340931.jpg?w=1200&strip=all' alt='java' width='40%' className='IMU' ></img>
               {/* <Typography variant='h1' className='im-head'>
                 java

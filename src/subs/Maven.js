@@ -10,7 +10,7 @@ const Maven = () => {
         
         <div className='box-div'>
           <div className='Tool' >
-            <a href='' target='_blank' rel="noreferrer">
+            <a href='https://maven.apache.org/download.cgi' target='_blank' rel="noreferrer">
               <img src='https://user-images.githubusercontent.com/88981/188587693-5710e58b-c1ad-442c-ac06-e1aeab30a905.png' alt='maven' width='40%' className='IMU' ></img>
               {/* <Typography variant='h1' className='im-head'>
                 java
