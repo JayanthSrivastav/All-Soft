@@ -1,7 +1,7 @@
 import React from 'react';
-import { Typography, Box } from '@mui/material'
+import { Typography, Box } from '@mui/material';
 // import PropTypes from 'prop-types';
-import '../App.css'
+import '../App.css';
 
 const Java = () => {
   return (
@@ -10,8 +10,8 @@ const Java = () => {
         
         <div className='box-div'>
           <div className='Tool' >
-            <a href='https://ngrok.com/' target='_blank' rel="noreferrer">
-              <img src='https://venturebeat.com/wp-content/uploads/2015/12/oracle-java-e1450723340931.jpg?w=1200&strip=all' alt='ngrok' width='40%' className='IMU' ></img>
+            <a href='' target='_blank' rel="noreferrer">
+              <img src='https://venturebeat.com/wp-content/uploads/2015/12/oracle-java-e1450723340931.jpg?w=1200&strip=all' alt='java' width='40%' className='IMU' ></img>
               {/* <Typography variant='h1' className='im-head'>
                 java
               </Typography> */}
@@ -29,49 +29,55 @@ const Java = () => {
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 1
             </Typography>
-            <p className='box-text'>Go to ngrok's <a href='https://ngrok.com/' target='_blank' rel="noreferrer">official website</a>.</p>
-            <img src={require('../assets/ngrok/download-step1.png')} alt='step-1' className='screenshots'/>
+            <p className='box-text'>Select a version (<a href='https://www.oracle.com/in/java/technologies/downloads/#java19' target='_blank' rel="noreferrer">Java 19</a>, <a href='https://www.oracle.com/in/java/technologies/downloads/#java17' target='_blank' rel="noreferrer">Java 17</a> or <a href='https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html' target='_blank' rel="noreferrer">Java 8</a>) to download. We are going to download Java Amazon Corretto 8 or simply, <a href='https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html' target='_blank' rel="noreferrer">Java 8</a>. Go to the <a href='https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html' >official website</a> and download the suitable msi installer.</p>
+            <img src={require('../assets/java/download-step1.png')} alt='step-1' className='screenshots'/>
+
+            <Typography variant='h3'component='h3' className='box-heading'>
+              Installing
+            </Typography>
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 2
             </Typography>
-            <p className='box-text'>Login if you already have an account or else, Sign up.</p>
-            <img src={require('../assets/ngrok/download-step2.png')} alt='step-2' className='screenshots' />
+            <p className='box-text'>Open the installer.</p>
+            <img src={require('../assets/java/download-step2.gif')} alt='step-2' className='screenshots' />
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 3
             </Typography>
-            <p className='box-text'>After login, you'll be led into the download page. Now, download accordingly to your Operating System. For this, we are going to download for windows so, click on the  'Download for Windows' button and wait until the zip file gets downloaded.</p>
-            <img src={require('../assets/ngrok/download-step3.png')} alt='step-3' className='screenshots'/>
+            <p className='box-text'>Click Next to continue.</p>
+            <img src={require('../assets/java/install-step3.png')} alt='step-3' className='screenshotd'/>
 
-            <Typography variant='h3'component='h3' className='box-heading'>
-              Setting up
-            </Typography>
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 4
             </Typography>
-            <p className='box-text'>Extract the downloaded zip file.</p>
-            <img src={require('../assets/ngrok/setup-step4.gif')} alt='step-4' className='screenshots'/>
+            <p className='box-text'>Browse the desired location to store and click on Next.</p>
+            <img src={require('../assets/java/install-step4.png')} alt='step-4' className='screenshotd'/>
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 5
             </Typography>
-            <p className='box-text'>Open the extracted folder and you'll find the <i>ngrok</i> application.</p>
-            <img src={require('../assets/ngrok/setup-step5.png')} alt='step-5' className='screenshots'/>
-            <p className='box-text'>Open the <i>ngrok</i> application.</p>
-            <img src={require('../assets/ngrok/setup-step5-2.png')} alt='step-5' className='screenshots'/>
-            <p className='box-text'>The <i>ngrok</i> application is a Terminal.</p>
+            <p className='box-text'>Click on Install to begin the installation, </p>
+            <img src={require('../assets/java/install-step5.png')} alt='step-5' className='screenshotd'/>
+            <p className='box-text'>and wait until the installation is completed</p>
+            <img src={require('../assets/java/install-step6.png')} alt='step-5' className='screenshotd'/>
+            <p className='box-text'>and then, click on Next.</p>
 
             <Typography variant='h4'component='h4' className='box-s-heading'>
               Step 6
             </Typography>
-            <p className='box-text'>Now, go back to the <i>ngrok</i> website and copy the command with your unique authtoken from 'Connect your account'</p>
-            <img src={require('../assets/ngrok/setup-step6-1.gif')} alt='step-6' className='screenshots'/>
-            <p className='box-text'>and paste it in the <i>ngrok</i> Terminal to store your authtoken to the default <i>ngrok.yml</i> configuration file.</p>
-            <img src={require('../assets/ngrok/setup-step6-2.gif')} alt='step-6' className='screenshots' />
-            <img src={require('../assets/ngrok/setup-step62.png')} alt='step-6' className='screenshots' />
-            <p className='box-text'><i>Authtoken is saved to configuration file: ../ngrok.yml</i>, meaning the authtoken is successfully stored.</p>
+            <p className='box-text'>Now, click on Finish to exit the Setup Wizard. You have successfully install Amazon Corretto JDK 8.</p>
+            <img src={require('../assets/java/install-step7.png')} alt='step-6' className='screenshotd'/>
+
+            <Typography variant='h3'component='h3' className='box-heading'>
+              Verification
+            </Typography>
+
+            <p className='box-text'>In the command prompt, type in <i>java -version</i> and run it.</p>
+            <img src={require('../assets/java/verify-step7.png')} alt='step-7' className='screenshots' />
+            <img src={require('../assets/java/verify-step8.png')} alt='step-8' className='screenshots' />
+            <p className='box-text'>You have successfully installed Java 8.</p>
 
           </div>
         </div>

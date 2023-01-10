@@ -4,6 +4,10 @@
 
 .App-header {
   background-color: #161616;
+  background-image: url('./assets/home-bg-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -90,7 +94,7 @@
   background-size: cover;
 
   /* min-height: 21vh; */
-  /* height: 38%; */
+  height: 320px;
 }
 
 .Program {
@@ -124,3 +128,19 @@
   font-family: 'Times New Roman', Times, serif;
   text-decoration: none;
 } */
+
+.screenshotd {
+  padding-left: 5%;
+  width: 60%;
+  padding-bottom: 3%;
+}
+
+a {
+  color: #61dafb;
+}
+
+.screenshote {
+  padding-left: 5%;
+  width: 40%;
+  padding-bottom: 3%;
+}
