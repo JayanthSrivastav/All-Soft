@@ -12,3 +12,5 @@ postman - https://www.postman.com/downloads/
 node - https://nodejs.org/en/download/
 
 vscode - https://code.visualstudio.com/download
+
+github - https://desktop.github.com/
