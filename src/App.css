@@ -117,6 +117,7 @@
   padding-bottom: 2%;
 }
 
+/* For full screen screenshots */
 .screenshots {
   padding-left: 5%;
   width: 80%;
@@ -129,6 +130,7 @@
   text-decoration: none;
 } */
 
+/* For Smaller Dialog Boxes */
 .screenshotd {
   padding-left: 5%;
   width: 60%;
@@ -139,8 +141,18 @@ a {
   color: #61dafb;
 }
 
+/* For Dialog Boxes */
 .screenshote {
   padding-left: 5%;
   width: 40%;
   padding-bottom: 3%;
+}
+
+.custom-divider {
+  position: relative;
+  height: 0.09vh;
+  width: 90%;
+  background-color: #262626;
+  left: 5%;
+  margin: 0;
 }
