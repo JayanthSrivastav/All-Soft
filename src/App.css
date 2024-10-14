@@ -33,6 +33,12 @@
   /* width: max-content; */
 }
 
+.Box-features {
+  width: '80%';
+  margin-top: '2vh';
+  box-shadow: 3;
+}
+
 .Heading {
   color: #bb86fc;
   /* margin-top: -35%; */
