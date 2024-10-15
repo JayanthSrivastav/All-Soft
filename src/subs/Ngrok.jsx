@@ -2,6 +2,7 @@ import { Typography, Box } from '@mui/material'
 import React from 'react';
 // import PropTypes from 'prop-types';
 import '../App.css'
+import logo from '../assets/logo/ngrok.svg';
 
 
 // const steps = ['Download', 'Start using'];
@@ -17,7 +18,8 @@ const Ngrok = () => {
         <div className='box-div'>
           <div className='Tool'>
             <a href='https://ngrok.com/' target='_blank' rel="noreferrer">
-              <img src='http://www.endtoend.ai/assets/blog/tutorial/ngrok-ssh-forwarding/ssh_ngrok.jpg' alt='ngrok' width='40%' ></img>
+              {/* <img src='http://www.endtoend.ai/assets/blog/tutorial/ngrok-ssh-forwarding/ssh_ngrok.jpg' alt='ngrok' width='40%' ></img> */}
+              <img src={logo} alt='ngrok' width='40%' className='logo-image'></img>
             </a>
             <Typography variant='body'>
 
