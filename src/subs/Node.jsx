@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import '../App.css';
+import logo from '../assets/logo/node.svg';
 
 const Node = () => {
   return (
@@ -10,7 +11,7 @@ const Node = () => {
 			<div className='box-div'>
 				<div className='Tool'>
 					<a href='' target='_blank' rel="noreferrer">
-						<img src='' alt='node' width='40%' className='IMU'></img>
+						<img src={logo} alt='node' width='40%' className='IMU'></img>
 					</a>
 					<Typography variant='body'>
 
