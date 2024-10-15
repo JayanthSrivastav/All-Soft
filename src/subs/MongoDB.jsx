@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Box } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import '../App.css';
+import logo from '../assets/logo/mongo.svg';
 
 const MongoDB = () => {
   return (
@@ -10,8 +11,8 @@ const MongoDB = () => {
 		
 		<div className='box-div'>
 		  <div className='Tool' >
-			<a href='https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html' target='_blank' rel="noreferrer">
-			  <img src='' alt='mongodb' width='40%' className='IMU' ></img>
+			<a href='' target='_blank' rel="noreferrer">
+			  <img src={logo} alt='mongodb' width='40%' className='IMU' ></img>
 			</a>
 			<Typography variant='body'>
 
