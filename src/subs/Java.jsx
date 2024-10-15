@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Box } from '@mui/material';
 // import PropTypes from 'prop-types';
 import '../App.css';
+import logo from '../assets/logo/java.svg';
 
 const Java = () => {
   return (
@@ -11,7 +12,7 @@ const Java = () => {
         <div className='box-div'>
           <div className='Tool' >
             <a href='https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html' target='_blank' rel="noreferrer">
-              <img src='https://venturebeat.com/wp-content/uploads/2015/12/oracle-java-e1450723340931.jpg?w=1200&strip=all' alt='java' width='40%' className='IMU' ></img>
+              <img src={logo} alt='java' width='40%' className='IMU' ></img>
               {/* <Typography variant='h1' className='im-head'>
                 java
               </Typography> */}
