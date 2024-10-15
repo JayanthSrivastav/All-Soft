@@ -14,11 +14,12 @@ import Postman from './subs/Postman';
 import Node from './subs/Node';
 import VSC from './subs/VSC';
 import GitHub from './subs/GitHub';
-import Rct from './subs/Rct';
-import Bootstrap from './subs/Bootstrap';
-import MUI from './subs/MUI';
-import Axios from './subs/Axios';
-import NPMCommands from './subs/NPMCommands';
+// import Rct from './subs/Rct';
+// import Bootstrap from './subs/Bootstrap';
+// import MUI from './subs/MUI';
+// import Axios from './subs/Axios';
+// import NPMCommands from './subs/NPMCommands';
+import NotFound from './subs/NotFound';
 
 
 function App() {
@@ -38,11 +39,12 @@ function App() {
         <Route exact path='/nodejs' element={<Node />} />
         <Route exact path='/vsc' element={<VSC />} />
         <Route exact path='/github' element={<GitHub />} />
-        <Route exact path='/react' element={<Rct />} />
-        <Route exact path='/bootstrap' element={<Bootstrap />} />
-        <Route exact path='/mui' element={<MUI />} />
-        <Route exact path='/axios' element={<Axios />} />
-        <Route exact path='/npm' element={<NPMCommands />} />
+        {/* <Route exact path='/react' element={<Rct />} /> */}
+        {/* <Route exact path='/bootstrap' element={<Bootstrap />} /> */}
+        {/* <Route exact path='/mui' element={<MUI />} /> */}
+        {/* <Route exact path='/axios' element={<Axios />} /> */}
+        {/* <Route exact path='/npm' element={<NPMCommands />} /> */}
+        <Route path = '*' element={<NotFound />} />
       </Routes>
 
       
