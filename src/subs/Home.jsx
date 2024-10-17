@@ -7,8 +7,8 @@ const Home = () => {
     return (
         <div className="App-header">
             {/* <Navbar className="nav"/> */}
-            <div className="Heading"><h1>Welcome home.</h1></div>
-            <div className="Subheading">Well, every software and stuff.</div>
+            <div className="Heading"><h1>all-soft</h1></div>
+            <div className="Subheading">An installation guide to every programming software and tool I use.</div>
 
             
             <div><SearchBar /></div>
