@@ -166,3 +166,20 @@ a {
 .logo-image {
   color: white;
 }
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar {
+  width: 100%; /* Full width */
+  max-width: 600px; /* Max width */
+  border-radius: 25px; /* Rounded corners */
+  background-color: #2a2a2a; /* Dark mode background */
+  color: #ffffff; /* Text color */
+  padding: 5px 10px; /* Padding for spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
