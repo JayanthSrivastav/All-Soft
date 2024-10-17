@@ -46,7 +46,7 @@
 
 .Subheading {
   color: #61dafb;
-  padding-bottom: 10%;
+  padding-bottom: 5vh;
 }
 
 /* gridStyle {
@@ -55,8 +55,8 @@
 } */
 
 .gridContainer {
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .nav {
@@ -171,15 +171,7 @@ a {
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  padding-bottom: 20vh;
 }
 
-.search-bar {
-  width: 100%; /* Full width */
-  max-width: 600px; /* Max width */
-  border-radius: 25px; /* Rounded corners */
-  background-color: #2a2a2a; /* Dark mode background */
-  color: #ffffff; /* Text color */
-  padding: 5px 10px; /* Padding for spacing */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
-}
 
