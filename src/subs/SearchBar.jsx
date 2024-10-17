@@ -5,13 +5,25 @@ import InputBase from '@mui/material/InputBase';
 import Divider from '@mui/material/Divider';
 import '../App.css';
 
-
-const SearchBar = () => {
+const SearchBar = ({ onSearch }) => {
   const [input, setInput] = useState("");
+
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setInput(value);
+    onSearch(value);
+  };
+
+  const handleSearch = (e) => {
+    e.preventDefault(); // Prevent the form from submitting
+    onSearch(input);
+  };
+
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', paddingBottom: '50px'}}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', paddingTop: '5vh', paddingBottom: '15vh'}}>
       <Paper
         component="form"
+        onSubmit={handleSearch}
         sx={{
           display: 'flex',
           alignItems: 'center',
@@ -26,21 +38,21 @@ const SearchBar = () => {
           sx={{
             ml: 1,
             flex: 1,
-            height: '100%', // Full height of the Paper
+            height: '100%',
             '& .MuiInputBase-input': {
               backgroundColor: 'transparent',
               color: '#ffffff',
               padding: '10px',
-              height: '100%', // Ensure input takes full height
+              height: '100%',
             },
           }}
           value={input}
-          onChange={(e) => setInput(e.target.value)}
+          onChange={handleChange}
           placeholder="Search"
           inputProps={{ 'aria-label': 'search-bar' }}
         />
         <Divider sx={{ height: '80%', m: 0.5, backgroundColor: '#444' }} orientation="vertical" />
-        <IconButton type="button" sx={{ p: '10px', color: '#ffffff', height: '100%' }} aria-label="search">
+        <IconButton type="submit" sx={{ p: '10px', color: '#ffffff', height: '100%' }} aria-label="search">
           <SearchIcon />
         </IconButton>
       </Paper>
