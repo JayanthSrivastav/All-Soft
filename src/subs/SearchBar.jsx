@@ -30,7 +30,7 @@ const SearchBar = ({ onSearch }) => {
           width: { xs: '90vw', sm: '85vw', md: '750px' },
           height: { xs: '45px', sm: '50px', md: '50px' },
           borderRadius: '25px',
-          backgroundColor: '#2a2a2a',
+          backgroundColor: '#161616',
           boxShadow: 2,
         }}
       >
