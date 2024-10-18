@@ -24,3 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 .devcontainer/devcontainer.json
 .devcontainer/docker-compose.yml
+/.vscode
