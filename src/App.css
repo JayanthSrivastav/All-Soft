@@ -4,7 +4,8 @@
 
 .App-header {
   background-color: #161616;
-  background-image: url('./assets/home-bg-3.jpg');
+  /* background-image: url('./assets/home-bg-3.jpg'); */
+  background-color: #1e2327;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -40,12 +41,13 @@
 }
 
 .Heading {
+
   color: #bb86fc;
   /* margin-top: -35%; */
 }
 
 .Subheading {
-  color: #61dafb;
+  color: #FFFDD0;
   padding-bottom: 5vh;
 }
 
@@ -175,3 +177,24 @@ a {
 }
 
 
+.card-container {
+  min-height: 100vh;
+}
+
+.not-found {
+  background-color: #1e2327;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.App-footer {
+  background-image: url('./assets/home-bg-3.jpg');
+  min-width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.gridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
