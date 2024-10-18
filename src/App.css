@@ -187,6 +187,15 @@ a {
   min-width: 100vw;
 }
 
+.not-found>h1 {
+  color: azure;
+  padding-top: 100px;
+}
+
+.not-found>h2 {
+  color: azure;
+}
+
 .App-footer {
   background-image: url('./assets/home-bg-3.jpg');
   min-width: 100vw;
