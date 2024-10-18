@@ -98,10 +98,10 @@ const BasicCard = ({ searchTerm }) => {
 					<Grid item xs={12} sm={6} md={4} sx={{ padding: "20px" }} key={index}>
 						<Card
 						sx={{
-							minWidth: 250,
+							minWidth: 350,
 							borderRadius: '16px',
 							backgroundColor: "#1e2327",
-							color: "#03dac5",
+							color: "#FFFDD0",
 							boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
 							display: 'flex',
 							flexDirection: 'column',

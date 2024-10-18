@@ -8,7 +8,7 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (term) => {
-    setSearchTerm(term);  // Update searchTerm state based on input
+    setSearchTerm(term);
   };
 
   return (

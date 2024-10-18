@@ -188,12 +188,12 @@ a {
 }
 
 .not-found>h1 {
-  color: azure;
+  color: #FFFDD0;
   padding-top: 200px;
 }
 
 .not-found>h2 {
-  color: azure;
+  color: #FFFDD0;
 }
 
 .App-footer {
