@@ -20,15 +20,22 @@ import GitHub from './subs/GitHub';
 // import Axios from './subs/Axios';
 // import NPMCommands from './subs/NPMCommands';
 import NotFound from './subs/NotFound';
+import { useState } from 'react';
 
 
 function App() {
   // const classes = useStyles();
+  const [selectedPage, setSelectedPage] = useState(null);
+
+  const handlePageSelect = (page) => {
+    setSelectedPage(page);
+  };
+
   return (
     <div className="App">
-      <Navbar className="nav"/>
+      <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} className="nav"/>
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Home selectedPage={selectedPage} />} />
         <Route exact path='/ngrok' element={<Ngrok />} />
         <Route exact path='/java' element={<Java />} />
         <Route exact path='/maven' element={<Maven />} />
