@@ -12,7 +12,7 @@ const BasicCard = ({ searchTerm }) => {
 		image: 'http://www.endtoend.ai/assets/blog/tutorial/ngrok-ssh-forwarding/ssh_ngrok.jpg',
 		link: '/ngrok',
 		description: 'A tool for creating secure tunnels to your localhost.',
-		category: 'Software' 
+		category: 'Tools' 
 	},
 	{ title: 'Java',
 		image: 'https://www.oracle.com/img/tech/cb88-java-logo-001.jpg',
@@ -24,7 +24,7 @@ const BasicCard = ({ searchTerm }) => {
 		image: 'https://user-images.githubusercontent.com/88981/188587693-5710e58b-c1ad-442c-ac06-e1aeab30a905.png',
 		link: '/maven',
 		description: 'A build automation tool used primarily for Java projects.',
-		category: 'Software' 
+		category: 'Tools' 
 	},
 	{ title: 'Tomcat',
 		image: 'https://nsfocusglobal.com/wp-content/uploads/2019/04/apachetomcat.jpg',
@@ -36,25 +36,25 @@ const BasicCard = ({ searchTerm }) => {
 		image: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1636832404785/mTXlsmro-.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
 		link: '/spring-boot',
 		description: 'A framework that simplifies the development of Java applications.',
-		category: 'Software' 
+		category: 'Frameworks' 
 	},
 	{ title: 'MongoDB',
 		image: 'https://webimages.mongodb.com/_com_assets/cms/kuzt9r42or1fxvlq2-Meta_Generic.png',
 		link: '/mongoDB',
 		description: 'A NoSQL database that uses a document-oriented data model.',
-		category: 'Software' 
+		category: 'Database' 
 	},
 	{ title: 'Postman',
 		image: 'https://miro.medium.com/max/894/1*0jyROv8ksMb6tZtlf2ewVQ.png',
 		link: '/postman',
 		description: 'A powerful tool for API development and testing.',
-		category: 'Software' 
+		category: 'API' 
 	},
 	{ title: 'Node.js',
 		image: 'https://www.devteam.space/wp-content/uploads/2022/05/nodejs.jpg',
 		link: '/nodejs',
 		description: 'A JavaScript runtime built on Chrome\'s V8 engine.',
-		category: 'Software' 
+		category: 'Dependencies' 
 	},
 	{ title: 'Visual Studio Code',
 		image: 'https://code.visualstudio.com/opengraphimg/opengraph-blog.png',
@@ -66,9 +66,9 @@ const BasicCard = ({ searchTerm }) => {
 		image: 'https://miro.medium.com/max/1400/1*SSRjtoQ0H2X3SBPOiJ5rZw.jpeg',
 		link: '/github',
 		description: 'A platform for version control and collaboration.',
-		category: 'Software' 
+		category: 'Tools' 
 	},
-	{ title: 'React',
+	{ title: 'React.js',
 		image: 'https://repository-images.githubusercontent.com/37153337/9d0a6780-394a-11eb-9fd1-6296a684b124',
 		link: 'https://create-react-app.dev/',
 		description: 'A JavaScript library for building user interfaces.',
@@ -78,25 +78,25 @@ const BasicCard = ({ searchTerm }) => {
 		image: 'https://getbootstrap.com/docs/5.2/assets/img/bootstrap-icons.png',
 		link: 'https://getbootstrap.com/',
 		description: 'A popular front-end framework for developing responsive websites.',
-		category: 'Software' 
+		category: 'Framework' 
 	},
 	{ title: 'Material UI',
 		image: 'https://cdn-media-1.freecodecamp.org/images/1*FDNeKIUeUnf0XdqHmi7nsw.png',
 		link: 'https://mui.com/material-ui/',
 		description: 'A React component library that implements Google\'s Material Design.',
-		category: 'Software' 
+		category: 'Framework' 
 	},
 	{ title: 'Axios',
 		image: 'https://linuxhint.com/wp-content/uploads/2022/01/word-image-1086.png',
 		link: 'https://www.npmjs.com/package/axios',
 		description: 'A promise-based HTTP client for the browser and Node.js.',
-		category: 'Software' 
+		category: 'API' 
 	},
 	{ title: 'npm commands',
 		image: 'https://miro.medium.com/max/1400/1*sO5oyZhvbI0cW3SrZ9ZwCA.png',
 		link: 'https://docs.npmjs.com/cli/v6/commands',
 		description: 'Command-line tools for managing Node.js packages.',
-		category: 'Software' 
+		category: 'Dependencies' 
 	},
 	];
 
