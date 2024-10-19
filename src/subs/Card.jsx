@@ -4,7 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { Grid, CardMedia, CardActionArea } from '@mui/material';
 
-const BasicCard = ({ searchTerm }) => {
+const BasicCard = ({ searchTerm, selectedPage }) => {
 
 	const toolsData = [
 	{
@@ -78,13 +78,13 @@ const BasicCard = ({ searchTerm }) => {
 		image: 'https://getbootstrap.com/docs/5.2/assets/img/bootstrap-icons.png',
 		link: 'https://getbootstrap.com/',
 		description: 'A popular front-end framework for developing responsive websites.',
-		category: 'Framework' 
+		category: 'Frameworks' 
 	},
 	{ title: 'Material UI',
 		image: 'https://cdn-media-1.freecodecamp.org/images/1*FDNeKIUeUnf0XdqHmi7nsw.png',
 		link: 'https://mui.com/material-ui/',
 		description: 'A React component library that implements Google\'s Material Design.',
-		category: 'Framework' 
+		category: 'Frameworks' 
 	},
 	{ title: 'Axios',
 		image: 'https://linuxhint.com/wp-content/uploads/2022/01/word-image-1086.png',
@@ -100,9 +100,14 @@ const BasicCard = ({ searchTerm }) => {
 	},
 	];
 
-	const filteredTools = toolsData.filter(tool => 
-		tool.title.toLowerCase().includes(searchTerm.toLowerCase())
-	);
+	// const filteredTools = toolsData.filter(tool => 
+	// 	tool.title.toLowerCase().includes(searchTerm.toLowerCase())
+	// );
+	const filteredTools = toolsData.filter(item => {
+		const matchesCategory = selectedPage ? item.category === selectedPage : true; //!selectedPage || item.category.toLowerCase() === selectedPage.toLowerCase();
+    	const matchesSearch = item.title.toLowerCase().includes(searchTerm.toLowerCase());
+    	return matchesCategory && matchesSearch;
+	});
 
 	return (
 	<div style={{justifyContent: "center"}}>
@@ -139,7 +144,7 @@ const BasicCard = ({ searchTerm }) => {
 					</Grid>
     			))
 			) : (
-				<Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center', padding: "20px" }}>
+				<Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center', padding: "20px", marginTop: '15vh' }}>
 					<Typography variant="h6" color="#e0e0e0">
 						No results found
 					</Typography>
