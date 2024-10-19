@@ -21,12 +21,12 @@ const Home = () => {
           <SearchBar onSearch={handleSearch} /> 
         </div>
       </div>
-      <div className="card-container">
-        <BasicCard searchTerm={searchTerm} />
-      </div>
+    </div>
+    <div className="card-container">
+      <BasicCard searchTerm={searchTerm} />
     </div>
     <div className='App-footer'>
-      <Footer className='App-footer'/>
+      <Footer/>
     </div>
     </>
   );
