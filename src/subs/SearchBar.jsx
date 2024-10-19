@@ -52,7 +52,7 @@ const SearchBar = ({ onSearch }) => {
           inputProps={{ 'aria-label': 'search-bar' }}
         />
         <Divider sx={{ height: '80%', m: 0.5, backgroundColor: '#444' }} orientation="vertical" />
-        <IconButton type="submit" sx={{ p: '10px', color: '#ffffff', height: '100%' }} aria-label="search">
+        <IconButton type="submit" href='/#card-container' sx={{ p: '10px', color: '#ffffff', height: '100%' }} aria-label="search">
           <SearchIcon />
         </IconButton>
       </Paper>
