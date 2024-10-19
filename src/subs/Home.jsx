@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 import '../App.css';
 import Footer from './Footer';
 
-const Home = () => {
+const Home = ({ selectedPage }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = (term) => {
@@ -23,7 +23,7 @@ const Home = () => {
       </div>
     </div>
     <div className="card-container">
-      <BasicCard searchTerm={searchTerm} />
+      <BasicCard searchTerm={searchTerm} selectedPage={selectedPage} />
     </div>
     <div className='App-footer'>
       <Footer/>
