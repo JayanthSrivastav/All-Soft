@@ -11,11 +11,11 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { CatchingPokemon } from '@mui/icons-material';
 
-const pages = ['Software', 'Tools', 'Dependencies', 'Frameworks', 'API'];
+const pages = ['Software', 'Tools', 'Dependencies', 'Frameworks', 'API', 'Database'];
 
-export default function Navbar() {
+export default function Navbar({ selectedPage, setSelectedPage }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [selectedPage, setSelectedPage] = React.useState(null);
+  // const [selectedPage, setSelectedPage] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -27,6 +27,7 @@ export default function Navbar() {
 
   const handleTogglePage = (page) => {
     setSelectedPage((prev) => (prev === page ? null : page));
+    // onPageSelect(page);
   };
 
   return (
@@ -118,7 +119,7 @@ export default function Navbar() {
             sx={{ display: { xs: 'block', md: 'none' } }}
           >
             {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
+              <MenuItem key={page} onClick={() => { handleTogglePage(page); }}>
                 <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
               </MenuItem>
             ))}
