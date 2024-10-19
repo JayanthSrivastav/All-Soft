@@ -54,8 +54,8 @@ export default function Navbar() {
                 variant={selectedPage === page ? 'outlined' : ''}
                 sx={{
                   my: 2,
-                  color: selectedPage === page ? '#bb86fc' : '#FFFDD0', // Change text color for selected
-                  borderColor: selectedPage === page ? '#bb86fc' : 'transparent', // Set border color for outlined
+                  color: selectedPage === page ? '#bb86fc' : '#FFFDD0',
+                  borderColor: selectedPage === page ? '#bb86fc' : 'transparent',
                   display: 'block',
                   fontFamily: 'monospace',
                   fontWeight: 700,
