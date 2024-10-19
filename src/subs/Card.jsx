@@ -86,19 +86,19 @@ const BasicCard = ({ searchTerm }) => {
 	];
 
 	const filteredTools = toolsData.filter(tool => 
-		tool.title.toLowerCase().includes(searchTerm)
+		tool.title.toLowerCase().includes(searchTerm.toLowerCase())
 	);
 
 	return (
-	<>
-		{/* <SearchBar onSearch={handleSearch} /> */}
-		<Grid container spacing={4} className="gridContainer">
+	<div style={{justifyContent: "center"}}>
+		<Grid container spacing={6} className="gridContainer">
 			{filteredTools.length > 0 ? (
 				filteredTools.map((item, index) => (
-					<Grid item xs={12} sm={6} md={4} sx={{ padding: "20px" }} key={index}>
+					<Grid item xs={12} sm={6} md={4} key={index}>
 						<Card
 						sx={{
-							minWidth: 350,
+							width: {xs:'100%'},
+							minWidth: 250,
 							borderRadius: '16px',
 							backgroundColor: "#1e2327",
 							color: "#FFFDD0",
@@ -106,6 +106,7 @@ const BasicCard = ({ searchTerm }) => {
 							display: 'flex',
 							flexDirection: 'column',
 						}}
+						className='card'
 						>
 							<CardActionArea href={item.link} target={item.link.startsWith('http') ? '_blank' : undefined} rel="noopener noreferrer">
 								<CardMedia
@@ -114,7 +115,7 @@ const BasicCard = ({ searchTerm }) => {
 								title={item.title + " : " + item.description}
 								/>
 								<CardContent sx={{ flexGrow: 1 }}>
-									<Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: '600', fontFamily: 'Poppins, sans-serif' }}>
+									<Typography gutterBottom variant="h5" component="div" sx={{ fontWeight: '600', fontFamily: 'monospace' }}>
 										{item.title}
 									</Typography>
 								</CardContent>
@@ -123,15 +124,14 @@ const BasicCard = ({ searchTerm }) => {
 					</Grid>
     			))
 			) : (
-				<Grid item xs={12} sx={{ textAlign: 'center', padding: "20px" }}>
-				<Typography variant="h6" color="#e0e0e0">
-					No results found
-				</Typography>
+				<Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center', padding: "20px" }}>
+					<Typography variant="h6" color="#e0e0e0">
+						No results found
+					</Typography>
 				</Grid>
 			)}
 		</Grid>
-
-	</>
+	</div>
   );
 }
 
