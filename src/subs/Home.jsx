@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import BasicCard from './Card';
 import SearchBar from './SearchBar';
 import '../App.css';
-import Footer from './Footer';
+// import Footer from './Footer';
 
 const Home = ({ selectedPage }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -25,9 +25,9 @@ const Home = ({ selectedPage }) => {
     <div className="card-container">
       <BasicCard searchTerm={searchTerm} selectedPage={selectedPage} />
     </div>
-    <div className='App-footer'>
+    {/* <div className='App-footer'>
       <Footer/>
-    </div>
+    </div> */}
     </>
   );
 }
