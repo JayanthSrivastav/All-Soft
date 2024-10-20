@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import { IconButton, Paper } from '@mui/material';
 import InputBase from '@mui/material/InputBase';
@@ -7,6 +7,7 @@ import '../App.css';
 
 const SearchBar = ({ onSearch }) => {
   const [input, setInput] = useState("");
+  const inputRef = useRef(null);
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -15,9 +16,27 @@ const SearchBar = ({ onSearch }) => {
   };
 
   const handleSearch = (e) => {
-    e.preventDefault(); // Prevent the form from submitting
+    e.preventDefault();
     onSearch(input);
+    inputRef.current.blur();
   };
+
+  const handleKeyDown = (event) => {
+    if (event.key === '/') {
+      if (document.activeElement !== inputRef.current) {
+        event.preventDefault();
+        inputRef.current.focus();
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+    
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', width: '100%', paddingTop: '5vh', paddingBottom: '15vh'}}>
@@ -31,10 +50,12 @@ const SearchBar = ({ onSearch }) => {
           height: { xs: '45px', sm: '50px', md: '50px' },
           borderRadius: '25px',
           backgroundColor: '#161616',
-          boxShadow: 2,
+          boxShadow: 5,
+          opacity: 0.85
         }}
       >
         <InputBase
+        inputRef={inputRef}
           sx={{
             ml: 1,
             flex: 1,
