@@ -4,6 +4,8 @@ import './App.css';
 // import Grid from './Card';
 import Navbar from './subs/Navbar';
 import Home from './subs/Home';
+import Footer from './subs/Footer';
+
 import Ngrok from './subs/Ngrok';
 import Java from './subs/Java';
 import Maven from './subs/Maven';
@@ -63,6 +65,7 @@ function App() {
         
         {/* <Grid className="gridStyle" /> */}
       {/* </div> */}
+      <Footer/>
     </div>
   );
 }
