@@ -1,0 +1,209 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  /* background-color: #161616; */
+  position: relative;
+  background-image: url('./assets/chaop.svg');
+  background-color: #1e2327;
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  background-attachment: fixed;
+  /* opacity: 1; */
+  /* min-height: 100vh; */
+  background-position:center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-bottom: 5%;
+}
+
+.BGCanvas {
+  /* background-color: #161616; */
+  background-image: url('./assets/rainbow-vortex.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: 100%; */
+  /* color: #61dafb; */
+  /* min-height: 100vh; */
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* width: max-content; */
+}
+
+.Box-features {
+  width: '80%';
+  margin-top: '2vh';
+  box-shadow: 3;
+}
+
+.Heading {
+
+  color: #bb86fc;
+  text-shadow: 2px 2px #643e95;
+  font-family: monospace;
+  /* margin-top: -35%; */
+}
+
+.Subheading {
+  color: #FFFDD0;
+  padding-bottom: 5vh;
+  font-family: monospace, poppins, sans-serif;
+  font-weight: 900;
+}
+
+/* gridStyle {
+  background-color: #171f24;
+  color: #61dafb;
+} */
+
+.gridContainer {
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: center;
+}
+
+.nav {
+  color: #bb86fc;
+}
+
+.box-div{
+  background-color: #181818;
+  /* min-height: 705vh; */
+  height: max-content;
+  /* max-width: 100vh; */
+  /* border: #202020; */
+}
+
+.box-heading {
+  text-align: left;
+  padding-left: 5%;
+  padding-top: 5%;
+  color: azure;
+  background-image: url('./assets/wavey-fingerprint.svg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: auto;
+  /* font-size: 300%; */
+}
+
+.box-s-heading {
+  text-align: left;
+  padding-left: 7%;
+  padding-top: 5%;
+  color: azure;
+}
+
+.Tool {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  
+  background-image: url('./assets/parabolic-pentagon.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* min-height: 21vh; */
+  height: 320px;
+}
+
+.Program {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  
+  background-image: url('./assets/parabolic-pentagon-red.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 21vh;
+}
+
+.box-text {
+  text-align: justify;
+  padding-left: 7%;
+  padding-right: 7%;
+  color: azure;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+/* For full screen screenshots */
+.screenshots {
+  padding-left: 5%;
+  width: 80%;
+  padding-bottom: 3%;
+}
+/* 
+.im-head {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+} */
+
+/* For Smaller Dialog Boxes */
+.screenshotd {
+  padding-left: 5%;
+  width: 60%;
+  padding-bottom: 3%;
+}
+
+a {
+  color: #61dafb;
+}
+
+/* For Dialog Boxes */
+.screenshote {
+  padding-left: 5%;
+  width: 40%;
+  padding-bottom: 3%;
+}
+
+.custom-divider {
+  position: relative;
+  height: 0.09vh;
+  width: 90%;
+  background-color: #262626;
+  left: 5%;
+  margin: 0;
+}
+
+.logo-image {
+  color: white;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding-bottom: 20vh;
+}
+
+
+.card-container {
+  /* min-height: 100vh; */
+  margin-top: -15vh;
+  background-color: #1e2327;
+  padding-bottom: 10%;
+}
+
+.not-found {
+  background-color: #1e2327;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.not-found>h1 {
+  color: #FFFDD0;
+  padding-top: 200px;
+}
+
+.not-found>h2 {
+  color: #FFFDD0;
+}
