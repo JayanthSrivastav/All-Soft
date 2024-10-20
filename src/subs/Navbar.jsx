@@ -10,11 +10,14 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { CatchingPokemon } from '@mui/icons-material';
+import { useNavigate } from 'react-router';
+import { useEffect } from 'react';
 
 const pages = ['Software', 'Tools', 'Dependencies', 'Frameworks', 'API', 'Database'];
 
 export default function Navbar({ selectedPage, setSelectedPage }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const navigate = useNavigate();
   // const [selectedPage, setSelectedPage] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -25,10 +28,40 @@ export default function Navbar({ selectedPage, setSelectedPage }) {
     setAnchorElNav(null);
   };
 
-  const handleTogglePage = (page) => {
+  const handleTogglePage = React.useCallback((page) => {
     setSelectedPage((prev) => (prev === page ? null : page));
+    handleCloseNavMenu();
+    navigate('/');
     // onPageSelect(page);
-  };
+  }, [navigate, setSelectedPage]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      const key = event.key;
+
+      if (document.activeElement.tagName !== 'INPUT') {
+        if (key >= '0' && key <= '9') {
+          const number = parseInt(key, 10);
+    
+          if (number === 0) {
+            setSelectedPage(null); // Deselect all pages
+          } else {
+            const index = number - 1; // Convert number to index (0-based)
+            if (index >= 0 && index < pages.length) {
+              handleTogglePage(pages[index]); // Select the corresponding page
+            }
+          }
+        }
+      }
+    };
+  
+    window.addEventListener('keydown', handleKeyDown);
+  
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleTogglePage, setSelectedPage]);
+  
 
   return (
     <AppBar position="static" sx={{ backgroundColor: "#1e2327", color: "#bb86fc" }}>
@@ -119,7 +152,15 @@ export default function Navbar({ selectedPage, setSelectedPage }) {
             sx={{ display: { xs: 'block', md: 'none' } }}
           >
             {pages.map((page) => (
-              <MenuItem key={page} onClick={() => { handleTogglePage(page); }}>
+              <MenuItem
+                key={page}
+                onClick={() => { handleTogglePage(page); }}
+                selected={selectedPage === page} // Highlight selected item
+                sx={{
+                  backgroundColor: selectedPage === page ? '#bb86fc' : 'transparent',
+                  color: selectedPage === page ? '#bb86fc' : '#000',
+                }}
+              >
                 <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
               </MenuItem>
             ))}
