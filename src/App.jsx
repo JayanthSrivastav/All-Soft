@@ -29,9 +29,9 @@ function App() {
   // const classes = useStyles();
   const [selectedPage, setSelectedPage] = useState(null);
 
-  const handlePageSelect = (page) => {
-    setSelectedPage(page);
-  };
+  // const handlePageSelect = (page) => {
+  //   setSelectedPage(page);
+  // };
 
   return (
     <div className="App">
