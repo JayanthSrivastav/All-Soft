@@ -10,7 +10,7 @@ const VSC = () => {
 			<div className='box-div'>
 				<div className='Tool'>
 					<a href='https://code.visualstudio.com/download' target='_blank' rel="noreferrer">
-						<img src='' alt='vsc' width='40%' className='IMU'></img>
+						<img src={require('../assets/images/VSC.jpg')} alt='vsc' width='40%' className='IMU'></img>
 					</a>
 					<Typography variant='body'>
 
