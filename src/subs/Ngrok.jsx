@@ -13,13 +13,14 @@ const Ngrok = () => {
   
   return (
     <div className='BGCanvas'>
-      <Box sx={{ width: '80%', marginTop: '2vh', boxShadow: 3 }}>
+      <Box sx={{ width:{xs: '100%', sm: '100%', md: '90%', lg: '85%' }, marginTop: '', boxShadow: {md: 24, lg: 24}, opacity: 0.97 }} className='Box-features'>
         
         <div className='box-div'>
           <div className='Tool'>
-            <a href='https://ngrok.com/' target='_blank' rel="noreferrer">
+            <a href='https://ngrok.com/' target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}>
               {/* <img src='http://www.endtoend.ai/assets/blog/tutorial/ngrok-ssh-forwarding/ssh_ngrok.jpg' alt='ngrok' width='40%' ></img> */}
-              <img src={logo} alt='ngrok' width='40%' className='logo-image'></img>
+              {/* <img src={logo} alt='ngrok' width='40%' className='logo-image'></img> */}
+              <Typography variant='h1' className='Logo'>spring boot</Typography>
             </a>
             <Typography variant='body'>
 
@@ -77,7 +78,7 @@ const Ngrok = () => {
             <img src={require('../assets/ngrok/setup-step6-2.gif')} alt='step-6' className='screenshots' />
             <img src={require('../assets/ngrok/setup-step62.png')} alt='step-6' className='screenshots' />
             <p className='box-text'><i>Authtoken is saved to configuration file: ../ngrok.yml</i>, meaning the authtoken is successfully stored.</p>
-
+            
           </div>
         </div>
       </Box>
