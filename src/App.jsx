@@ -20,7 +20,6 @@ import GitHub from "./subs/GitHub";
 import "./App.css";
 
 function App() {
-
 	const [selectedPage, setSelectedPage] = useState(null);
 
 	return (
@@ -31,11 +30,7 @@ function App() {
 				className="nav"
 			/>
 			<Routes>
-				<Route
-					exact
-					path="/"
-					element={<Home selectedPage={selectedPage} />}
-				/>
+				<Route exact path="/" element={<Home selectedPage={selectedPage} />} />
 				<Route exact path="/ngrok" element={<Ngrok />} />
 				<Route exact path="/java" element={<Java />} />
 				<Route exact path="/maven" element={<Maven />} />
