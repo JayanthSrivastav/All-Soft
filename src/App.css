@@ -40,6 +40,7 @@
   align-items: center;
   /* justify-content: center; */
   /* width: max-content; */
+  padding-bottom: 5%;
 }
 
 .Box-features {
@@ -85,6 +86,7 @@
   height: 100%;
   /* max-width: 100vh; */
   border: #202020;
+  padding-bottom: 5%;
 }
 
 .box-heading {
@@ -97,6 +99,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-size: auto;
+  /* margin-top: 5% !important; */
   /* font-size: 300%; */
 }
 
@@ -159,22 +162,12 @@
   width: 80%;
   padding-bottom: 3%;
 }
-/* 
-.im-head {
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  text-decoration: none;
-} */
 
 /* For Smaller Dialog Boxes */
 .screenshotd {
   padding-left: 5%;
   width: 60%;
   padding-bottom: 3%;
-}
-
-a {
-  color: #61dafb;
 }
 
 /* For Dialog Boxes */
@@ -184,13 +177,36 @@ a {
   padding-bottom: 3%;
 }
 
+/* 
+.im-head {
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+} */
+
+a {
+  color: #61dafb;
+}
+
+
 .custom-divider {
-  position: relative;
+  /* position: relative; */
   height: 0.09vh;
   width: 90%;
-  background-color: #262626;
-  left: 5%;
-  margin: 0;
+  background-color: #643e95;
+  opacity: 0.4;
+  /* left: 5%; */
+  margin: 0 auto !important;
+}
+
+.custom-s-divider {
+  /* position: relative; */
+  height: 0.09vh;
+  width: 80%;
+  background-color: #FFFDD0;
+  opacity: 0.05;
+  /* left: 0; */
+  margin: 0 auto !important;
 }
 
 .search-wrapper {
@@ -246,9 +262,19 @@ a {
 }
 
 @media (max-width: 600px) {
+  .screenshots {
+    /* padding-left: 5%; */
+    width: 80%;
+  }
+  /* For Dialog Boxes */
+  .screenshote {
+    width: 70%;
+  }
+  .BGCanvas {
+    padding-bottom: 0;
+  }
   .Logo {
     font-size: 4rem!important;
-    max-font-size: var(6rem);
   }
 
   .Tool {
@@ -257,7 +283,7 @@ a {
   }
 
   .box-div {
-    padding-bottom: 10%;
+    padding-bottom: 15%;
   }
 
   .css-gepadz-MuiTypography-root {
@@ -272,3 +298,29 @@ a {
   
 }
 
+.Box-features {
+  width: 100%;
+  margin-top: 0;
+  opacity: 0.97;
+  box-shadow: none;
+}
+
+/* @media (min-width: 600px) {
+  .Box-features {
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .Box-features {
+    width: 90%;
+    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (min-width: 1200px) {
+  .Box-features {
+    width: 85%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+} */
