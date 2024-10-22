@@ -262,24 +262,30 @@ a {
 }
 
 @media (max-width: 600px) {
+  .card-container {
+    padding-bottom: 25%;
+  }
+
   .screenshots {
     /* padding-left: 5%; */
     width: 80%;
   }
+
   /* For Dialog Boxes */
   .screenshote {
     width: 70%;
   }
+
   .BGCanvas {
     padding-bottom: 0;
   }
+
   .Logo {
     font-size: 4rem!important;
   }
 
   .Tool {
     height: 200px;
-
   }
 
   .box-div {
