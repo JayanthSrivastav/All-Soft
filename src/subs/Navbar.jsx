@@ -39,16 +39,16 @@ export default function Navbar({ selectedPage, setSelectedPage }) {
     const handleKeyDown = (event) => {
       const key = event.key;
 
-      if (document.activeElement.tagName !== 'INPUT') {
+      if (document.activeElement.tagName !== 'INPUT' && !event.altKey && !event.ctrlKey && !event.shiftKey) {
         if (key >= '0' && key <= '9') {
           const number = parseInt(key, 10);
     
           if (number === 0) {
-            setSelectedPage(null); // Deselect all pages
+            setSelectedPage(null);
           } else {
-            const index = number - 1; // Convert number to index (0-based)
+            const index = number - 1;
             if (index >= 0 && index < pages.length) {
-              handleTogglePage(pages[index]); // Select the corresponding page
+              handleTogglePage(pages[index]);
             }
           }
         }
